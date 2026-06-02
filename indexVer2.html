@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumuman Kelulusan - MI Muhammadiyah Kebutuh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f9f0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23075e07' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .grad-cap {
+            display: inline-block;
+            transform: translateY(2px);
+        }
+        
+        .result-card {
+            transition: all 0.3s ease;
+        }
+        
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 128, 0, 0.1), 0 10px 10px -5px rgba(0, 128, 0, 0.04);
+        }
+        
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 32px rgba(0, 100, 0, 0.1);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .result-container {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 32px rgba(0, 100, 0, 0.1);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-primary {
+            background-color: #1e8e3e;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #166e2f;
+            transform: translateY(-2px);
+        }
+        
+        .header-decoration {
+            height: 5px;
+            background: linear-gradient(90deg, #1e8e3e 0%, #34a853 50%, #1e8e3e 100%);
+        }
+        
+        .footer-decoration {
+            height: 3px;
+            background: linear-gradient(90deg, #1e8e3e 0%, #34a853 50%, #1e8e3e 100%);
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #34a853;
+            opacity: 0;
+        }
+        
+        .timer-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .timer-box {
+            background: linear-gradient(135deg, #1e8e3e 0%, #34a853 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            min-width: 80px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(30, 142, 62, 0.2);
+            animation: timerPulse 1s ease-in-out infinite;
+        }
+        
+        .timer-box:nth-child(odd) {
+            animation-delay: 0s;
+        }
+        
+        .timer-box:nth-child(even) {
+            animation-delay: 0.2s;
+        }
+        
+        .timer-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timer-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        
+        @keyframes timerPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .timer-section {
+            background: rgba(30, 142, 62, 0.08);
+            border: 2px solid #34a853;
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ <script src="/_sdk/telemetry_sdk.js"></script></head>
+ <body class="min-h-screen">
+  <div class="header-decoration w-full"></div>
+  <div class="container mx-auto px-4 py-8">
+   <!-- Login Section -->
+   <div id="login-section" class="flex flex-col items-center justify-center">
+    <div class="text-center mb-8">
+     <div class="flex justify-center mb-2">
+      <img src="logo.png" style="max-width: 86px; max-height: 86px;">
+       <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838l-2.727 1.17 1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+      </svg>
+     </div>
+     <h1 class="text-3xl md:text-4xl font-bold text-green-800 mb-2">Pengumuman Kelulusan</h1>
+     <h2 class="text-xl md:text-2xl font-semibold text-green-700">MI Muhammadiyah Kebutuh</h2>
+     <p class="text-gray-600 mt-2">Tahun Ajaran 2025/2026</p>
+    </div><!-- Timer Section - Full Width -->
+    <div class="timer-section mb-8 max-w-2xl mx-auto">
+     <p class="text-lg text-green-700 font-semibold text-center mb-4">Pengumuman Belum Dibuka</p>
+     <p class="text-lg text-gray-500 text-center mb-2 italic">Pengumuman dapat diakses mulai:</p>
+     <p class="text-lg text-green-700 font-semibold text-center mb-4">2 Juni 2026, Pukul 17:00 WIB</p>
+     <div class="timer-container" id="login-timer">
+      <div class="timer-box">
+       <div class="timer-number" id="timer-days">
+        00
+       </div>
+       <div class="timer-label">
+        Hari
+       </div>
+      </div>
+      <div class="timer-box">
+       <div class="timer-number" id="timer-hours">
+        00
+       </div>
+       <div class="timer-label">
+        Jam
+       </div>
+      </div>
+      <div class="timer-box">
+       <div class="timer-number" id="timer-minutes">
+        00
+       </div>
+       <div class="timer-label">
+        Menit
+       </div>
+      </div>
+      <div class="timer-box">
+       <div class="timer-number" id="timer-seconds">
+        00
+       </div>
+       <div class="timer-label">
+        Detik
+       </div>
+      </div>
+     </div>
+    </div><!-- Login Form Container -->
+    <div class="login-container w-full max-w-md p-8 mx-auto hidden">
+     <h3 class="text-xl font-semibold text-green-800 mb-6 text-center">Masukkan Data Siswa</h3>
+     <form id="login-form" class="space-y-6">
+      <div>
+       <label for="nama" class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label> <input type="text" id="nama" name="nama" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Masukkan nama lengkap" required>
+      </div>
+      <div>
+       <label for="nisn" class="block text-sm font-medium text-gray-700 mb-1">NISN</label> <input type="text" id="nisn" name="nisn" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Masukkan NISN" required>
+      </div>
+      <div>
+       <button type="submit" class="btn-primary w-full py-2 px-4 text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"> Lihat Hasil </button>
+      </div>
+     </form>
+    </div>
+   </div><!-- Result Section (Hidden by default) -->
+   <div id="result-section" class="hidden">
+    <div class="flex justify-between items-center mb-6">
+     <button id="back-button" class="flex items-center text-green-700 hover:text-green-900">
+      <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+      </svg> Kembali </button> <button id="print-button" class="flex items-center text-green-700 hover:text-green-900">
+      <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+      </svg> Cetak </button>
+    </div>
+    <div class="result-container p-8 mb-8" id="printable-area">
+     <div class="text-center mb-8">
+      <div class="flex justify-center mb-2">
+       <img src="logo.png" style="max-width: 86px; max-height: 86px;">
+        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838l-2.727 1.17 1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+       </svg>
+      </div>
+      <h1 class="text-3xl font-bold text-green-800 mb-2">Pengumuman Kelulusan</h1>
+      <h2 class="text-xl font-semibold text-green-700">MI Muhammadiyah Kebutuh</h2>
+      <p class="text-gray-600 mt-2">Tahun Ajaran 2025/2026</p>
+     </div>
+     <div class="border-t border-b border-gray-200 py-6 mb-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+       <div>
+        <p class="text-sm text-gray-600">Nama Lengkap:</p>
+        <p class="font-semibold text-gray-800" id="result-nama">-</p>
+       </div>
+       <div>
+        <p class="text-sm text-gray-600">NISN:</p>
+        <p class="font-semibold text-gray-800" id="result-nisn">-</p>
+       </div>
+       <div>
+        <p class="text-sm text-gray-600">Jenis Kelamin:</p>
+        <p class="font-semibold text-gray-800" id="result-gender">-</p>
+       </div>
+       <div>
+        <p class="text-sm text-gray-600">Tempat, Tanggal Lahir:</p>
+        <p class="font-semibold text-gray-800" id="result-ttl">-</p>
+       </div>
+      </div>
+     </div>
+     <div class="text-center mb-8">
+      <div class="mb-4">
+       <p class="text-lg text-gray-700">Status Kelulusan:</p>
+       <div id="status-container" class="mt-2">
+        <span id="result-status" class="inline-block px-6 py-2 rounded-full text-white font-bold text-lg">-</span>
+       </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-lg mx-auto">
+       <div class="bg-green-50 rounded-lg p-4 border border-green-200">
+        <p class="text-sm text-gray-600 mb-1">Nilai Rata-rata:</p>
+        <p class="font-bold text-2xl text-green-800" id="result-nilai">-</p>
+       </div>
+       <div class="bg-green-50 rounded-lg p-4 border border-green-200">
+        <p class="text-sm text-gray-600 mb-1">Keterangan:</p>
+        <p class="font-bold text-lg text-green-800" id="result-keterangan">-</p>
+       </div>
+      </div>
+     </div>
+     <div class="text-center">
+      <div id="success-message" class="hidden">
+       <div class="mb-4">
+        <svg class="w-16 h-16 text-green-500 mx-auto" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-green-800 mb-2">Selamat!</h3>
+       <p class="text-gray-600">Anda telah berhasil menyelesaikan pendidikan di MI Muhammadiyah Kebutuh.</p>
+      </div>
+      <p class="text-xs text-gray-500 mt-8 italic">Selanjutnya, mohon menunggu informasi resmi dari Madrasah dan Wali Kelas mengenai jadwal pembagian Surat Keterangan Lulus (SKL) serta Ijazah Kelulusan.</p>
+      <p class="text-xs text-gray-500 mt-8 italic">Jika ada perbedaan hasil pengumuman online dan manual, maka yang menjadi acuan adalah dokumen kelulusan yang telah disahkan dan ditandatangani oleh kepala madrasah.</p>
+     </div>
+    </div>
+   </div><!-- Not Found Section (Hidden by default) -->
+   <div id="not-found-section" class="hidden">
+    <div class="flex justify-center mb-6">
+     <button id="back-button-error" class="flex items-center text-green-700 hover:text-green-900">
+      <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+      </svg> Kembali </button>
+    </div>
+    <div class="login-container w-full max-w-md p-8 mx-auto text-center">
+     <svg class="w-16 h-16 text-yellow-500 mx-auto mb-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+     </svg>
+     <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Tidak Ditemukan</h3>
+     <p class="text-gray-600 mb-4">Maaf, data siswa yang Anda masukkan tidak ditemukan. Silakan periksa kembali nama dan NISN Anda.</p><button id="try-again-button" class="btn-primary py-2 px-4 text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"> Coba Lagi </button>
+    </div>
+   </div>
+  </div>
+  <div class="footer-decoration w-full mt-8"></div>
+  <footer class="text-center py-6 text-sm text-gray-600">
+   © 2026 MI Muhammadiyah Kebutuh. Hak Cipta Dilindungi.
+  </footer>
+  <script>
+        // Timer function
+        function startTimer() {
+            // Set target date to June 2, 2026 at 16:00 WIB (UTC+7)
+            const targetDate = new Date('2026-05-02T16:00:00+07:00');
+            
+            function updateTimer() {
+                const now = new Date().getTime();
+                const timeRemaining = targetDate - now;
+                
+                if (timeRemaining <= 0) {
+                    // Timer ended
+                    document.getElementById('timer-days').textContent = '00';
+                    document.getElementById('timer-hours').textContent = '00';
+                    document.getElementById('timer-minutes').textContent = '00';
+                    document.getElementById('timer-seconds').textContent = '00';
+                    
+                    // Show login form when timer ends
+                    document.querySelector('.login-container').classList.remove('hidden');
+                    document.getElementById('login-form').classList.remove('hidden');
+                    document.querySelector('.timer-section p').textContent = 'Pengumuman Telah Dibuka!';
+                    return;
+                }
+                
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+                
+                document.getElementById('timer-days').textContent = String(days).padStart(2, '0');
+                document.getElementById('timer-hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('timer-minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('timer-seconds').textContent = String(seconds).padStart(2, '0');
+            }
+            
+            // Update immediately and then every second
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+        
+        // Start timer when page loads
+        startTimer();
+
+        // Student data
+        const studentData = [
+            {nama: "ARYA DESKA NUR AZIZAN", nisn: "3136539954", gender: "Laki-laki", ttl: "Purbalingga, 2013-12-20", status: "Lulus", nilai: "86", keterangan: "Sangat Memuaskan"},
+            {nama: "AZKIYA REGINA ROSYIDA", nisn: "3148534562", gender: "Perempuan", ttl: "Purbalingga, 2014-05-07", status: "Lulus", nilai: "69", keterangan: "Cukup Memuaskan"},
+            {nama: "BAGUS KHAIRUL AZAM", nisn: "3140511691", gender: "Laki-laki", ttl: "Purbalingga, 2014-04-24", status: "Lulus", nilai: "76", keterangan: "Memuaskan"},
+            {nama: "BAKTI ZIKRA NADHIFSYAH", nisn: "3141693802", gender: "Laki-laki", ttl: "Purbalingga, 2014-04-19", status: "Lulus", nilai: "79", keterangan: "Memuaskan"},
+            {nama: "BILQISTYA AULIA NISA", nisn: "3141625920", gender: "Perempuan", ttl: "Purbalingga, 2014-04-24", status: "Lulus", nilai: "70", keterangan: "Cukup Memuaskan"},
+            {nama: "CANTIKA BALQIS ZAHRANI", nisn: "0138017069", gender: "Perempuan", ttl: "Purbalingga, 2013-12-13", status: "Lulus", nilai: "66", keterangan: "Cukup Memuaskan"},
+            {nama: "ELVETTA ALLEIRA AZ-ZAHRA", nisn: "3139651360", gender: "Perempuan", ttl: "Banyumas, 2013-09-18", status: "Lulus", nilai: "81", keterangan: "Sangat Memuaskan"},
+            {nama: "FAMAS RIFTIAN ARDIANSYAH", nisn: "3142123957", gender: "Laki-laki", ttl: "Purbalingga, 2014-05-05", status: "Lulus", nilai: "84", keterangan: "Sangat Memuaskan"},
+            {nama: "FATIH YUMNAA YA'IISY", nisn: "3144939861", gender: "Perempuan", ttl: "Purbalingga, 2014-07-28", status: "Lulus", nilai: "75", keterangan: "Memuaskan"},
+            {nama: "FAUZI MIFTAKHUL RIZKI", nisn: "3146367566", gender: "Laki-laki", ttl: "Purbalingga, 2014-08-06", status: "Lulus", nilai: "74", keterangan: "Memuaskan"},
+            {nama: "FIKA AULIA ANGGRAENI", nisn: "3148345651", gender: "Perempuan", ttl: "Purbalingga, 2014-02-24", status: "Lulus", nilai: "70", keterangan: "Memuaskan"},
+            {nama: "KALILLA ADELITA SHEYSA", nisn: "3143560885", gender: "Perempuan", ttl: "Purbalingga, 2014-01-28", status: "Lulus", nilai: "73", keterangan: "Memuaskan"},
+            {nama: "KHAFID AGUS AMRULOH", nisn: "3135233518", gender: "Laki-laki", ttl: "Purbalingga, 2013-08-18", status: "Lulus", nilai: "74", keterangan: "Memuaskan"},
+            {nama: "KHALIFAH RAMADHAN BONAI", nisn: "3131320613", gender: "Laki-laki", ttl: "Biak, 2013-07-10", status: "Lulus", nilai: "68", keterangan: "Cukup Memuaskan"},
+            {nama: "KHANSA NUR AZIZAH", nisn: "3145954680", gender: "Perempuan", ttl: "Purbalingga, 2014-05-17", status: "Lulus", nilai: "72", keterangan: "Memuaskan"},
+            {nama: "MAHIRA DINAR RAYYANA", nisn: "3146851406", gender: "Perempuan", ttl: "Purbalingga, 2014-01-07", status: "Lulus", nilai: "70", keterangan: "Memuaskan"},
+            {nama: "MOHAMMAD WILDAN KHABIBI", nisn: "3139621813", gender: "Laki-laki", ttl: "Purbalingga, 2013-11-25", status: "Lulus", nilai: "68", keterangan: "Cukup Memuaskan"},
+            {nama: "MUHAMMAD ABYAN ALAUNA RAHAGI", nisn: "3147836715", gender: "Laki-laki", ttl: "Purbalingga, 2014-08-22", status: "Lulus", nilai: "60", keterangan: "Cukup Memuaskan"},
+            {nama: "NAFIL HIBATULLAH SHIDQI", nisn: "3148133701", gender: "Laki-laki", ttl: "Bogor, 2014-02-15", status: "Lulus", nilai: "76", keterangan: "Memuaskan"},
+            {nama: "RAFLI FAOZI SAKTIAWAN", nisn: "3146892903", gender: "Laki-laki", ttl: "Purbalingga, 2014-02-05", status: "Lulus", nilai: "74", keterangan: "Memuaskan"},
+            {nama: "SUSAN IMROATUN ISNAENI", nisn: "0135720624", gender: "Perempuan", ttl: "Purbalingga, 2013-10-13", status: "Lulus", nilai: "77", keterangan: "Memuaskan"},
+            {nama: "SYAFIQ FAIRUZ HAFIZUDIN", nisn: "3147900662", gender: "Laki-laki", ttl: "klaten, 2014-06-05", status: "Lulus", nilai: "69", keterangan: "Cukup Memuaskan"},
+            {nama: "SYAKIRA ANINDYA KALANI", nisn: "0132639220", gender: "Perempuan", ttl: "Banjarnegara, 2013-12-20", status: "Lulus", nilai: "76", keterangan: "Memuaskan"},
+            {nama: "ZAHWA AULIYA", nisn: "3145655555", gender: "Perempuan", ttl: "Purbalingga, 2014-04-11", status: "Lulus", nilai: "76", keterangan: "Memuaskan"}
+        ];
+
+        // DOM elements
+        const loginForm = document.getElementById('login-form');
+        const loginSection = document.getElementById('login-section');
+        const resultSection = document.getElementById('result-section');
+        const notFoundSection = document.getElementById('not-found-section');
+        const backButton = document.getElementById('back-button');
+        const backButtonError = document.getElementById('back-button-error');
+        const tryAgainButton = document.getElementById('try-again-button');
+        const printButton = document.getElementById('print-button');
+        
+        // Result elements
+        const resultNama = document.getElementById('result-nama');
+        const resultNisn = document.getElementById('result-nisn');
+        const resultGender = document.getElementById('result-gender');
+        const resultTtl = document.getElementById('result-ttl');
+        const resultStatus = document.getElementById('result-status');
+        const resultNilai = document.getElementById('result-nilai');
+        const resultKeterangan = document.getElementById('result-keterangan');
+        const successMessage = document.getElementById('success-message');
+        const statusContainer = document.getElementById('status-container');
+        
+        // Form submission
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nama = document.getElementById('nama').value.trim().toUpperCase();
+            const nisn = document.getElementById('nisn').value.trim();
+            
+            // Find student data
+            const student = studentData.find(s => 
+                (s.nama.toUpperCase() === nama && s.nisn === nisn) || 
+                (s.nama.toUpperCase().includes(nama) && s.nisn === nisn) ||
+                (s.nama.toUpperCase() === nama && s.nisn.includes(nisn))
+            );
+            
+            if (student) {
+                // Display result
+                resultNama.textContent = student.nama;
+                resultNisn.textContent = student.nisn;
+                resultGender.textContent = student.gender;
+                resultTtl.textContent = student.ttl;
+                resultNilai.textContent = student.nilai;
+                resultKeterangan.textContent = student.keterangan;
+                
+                // Set status with appropriate styling
+                resultStatus.textContent = student.status;
+                if (student.status === "Lulus") {
+                    resultStatus.className = "inline-block px-6 py-2 rounded-full text-white font-bold text-lg bg-green-600";
+                    successMessage.classList.remove('hidden');
+                    createConfetti();
+                } else {
+                    resultStatus.className = "inline-block px-6 py-2 rounded-full text-white font-bold text-lg bg-red-600";
+                    successMessage.classList.add('hidden');
+                }
+                
+                // Show result section
+                loginSection.classList.add('hidden');
+                resultSection.classList.remove('hidden');
+                notFoundSection.classList.add('hidden');
+            } else {
+                // Show not found section
+                loginSection.classList.add('hidden');
+                resultSection.classList.add('hidden');
+                notFoundSection.classList.remove('hidden');
+            }
+        });
+        
+        // Back button functionality
+        backButton.addEventListener('click', function() {
+            loginSection.classList.remove('hidden');
+            resultSection.classList.add('hidden');
+            notFoundSection.classList.add('hidden');
+            document.getElementById('nama').value = '';
+            document.getElementById('nisn').value = '';
+        });
+        
+        backButtonError.addEventListener('click', function() {
+            loginSection.classList.remove('hidden');
+            resultSection.classList.add('hidden');
+            notFoundSection.classList.add('hidden');
+        });
+        
+        tryAgainButton.addEventListener('click', function() {
+            loginSection.classList.remove('hidden');
+            resultSection.classList.add('hidden');
+            notFoundSection.classList.add('hidden');
+        });
+        
+        // Print functionality
+        printButton.addEventListener('click', function() {
+            const printContent = document.getElementById('printable-area').innerHTML;
+            const originalContent = document.body.innerHTML;
+            
+            document.body.innerHTML = `
+                <div style="padding: 20px;">
+                    ${printContent}
+                </div>
+            `;
+            
+            window.print();
+            document.body.innerHTML = originalContent;
+            
+            // Reattach event listeners after printing
+            document.getElementById('back-button').addEventListener('click', function() {
+                loginSection.classList.remove('hidden');
+                resultSection.classList.add('hidden');
+                notFoundSection.classList.add('hidden');
+            });
+            
+            document.getElementById('print-button').addEventListener('click', function() {
+                printButton.click();
+            });
+        });
+        
+        // Confetti animation for successful result
+        function createConfetti() {
+            const confettiCount = 100;
+            const container = document.querySelector('body');
+            
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                
+                // Random position
+                const startPositionX = Math.random() * window.innerWidth;
+                
+                // Random color
+                const colors = ['#34a853', '#1e8e3e', '#4285f4', '#fbbc05', '#ea4335'];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                // Random size
+                const size = Math.floor(Math.random() * 10) + 5;
+                
+                // Random rotation
+                const rotation = Math.floor(Math.random() * 360);
+                
+                // Apply styles
+                confetti.style.left = `${startPositionX}px`;
+                confetti.style.top = '-10px';
+                confetti.style.backgroundColor = randomColor;
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                confetti.style.transform = `rotate(${rotation}deg)`;
+                confetti.style.position = 'fixed';
+                confetti.style.zIndex = '1000';
+                
+                // Add to container
+                container.appendChild(confetti);
+                
+                // Animate
+                const animationDuration = Math.random() * 3 + 2;
+                const animationDelay = Math.random() * 2;
+                
+                confetti.style.animation = `fall ${animationDuration}s ease-in ${animationDelay}s forwards`;
+                
+                // Create keyframe animation
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    @keyframes fall {
+                        0% {
+                            transform: translateY(0) rotate(${rotation}deg);
+                            opacity: 1;
+                        }
+                        100% {
+                            transform: translateY(${window.innerHeight}px) rotate(${rotation + 360}deg);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                // Remove after animation
+                setTimeout(() => {
+                    confetti.remove();
+                    style.remove();
+                }, (animationDuration + animationDelay) * 1000);
+            }
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a04b29a31ede8216',t:'MTc4MDI4NDg2Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
