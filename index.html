@@ -314,6 +314,9 @@
                     document.getElementById('timer-hours').textContent = '00';
                     document.getElementById('timer-minutes').textContent = '00';
                     document.getElementById('timer-seconds').textContent = '00';
+
+                 // Hentikan tampilan timer
+                    document.querySelector('.timer-section').style.display = 'none';
                     
                     // Show login form when timer ends
                     document.querySelector('.login-container').classList.remove('hidden');
